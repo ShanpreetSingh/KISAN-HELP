@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUERIES</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header id="site-header">
+        <h1> QUERIES </h1>
+        <h5> -Ask your Queries </h5>
+    </header>
+    
+    <p class="guideintro">
+        "Where farming meets technology, every query grows a better harvest."
+    </p>
+
+    <!-- Queries Section -->
+    <section id="queries-section">
+        <h2>Ask Your Questions</h2>
+        <form id="query-form" action="/submit-query" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" placeholder="Type your question here..." rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer id="site-footer" class="footer-hidden">
+        <p class="footer">
+            "Seeds of Knowledge, Fields of Success"
+        </p>
+        <p><a href="index.html" target="_blank">Back to Home</a></p>
+    </footer>
+</body>
+</html>

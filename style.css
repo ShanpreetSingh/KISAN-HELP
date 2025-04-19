@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-image:radial-gradient(circle,whitesmoke,green)
+    
+}
+#site-header{
+    position: relative;
+    top: -100px;
+    transition: top 0.3s ease-in-out;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#site-header.active{
+    top: 0;
+}
+
+h1{
+   font-size: 6rem;
+   background-color: rgb(14, 81, 14);
+   font-weight: bold;
+   color: gold;
+   top: 0;
+   text-align: center;
+   margin: 0;
+}
+h5{
+    font-size: 2rem;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(181, 181, 145);
+    margin: 0;
+}
+ul{      /*STYLING OF LISTS*/
+    font-size: 1.5rem;
+    list-style:circle;
+    line-height: 4rem;
+    position: relative;
+    padding-top: 50%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+ul li{
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px ;
+}
+ul li a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(16, 123, 52);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3 ease;
+}
+ul li a:hover{
+    background-color: rgb(75, 80, 78);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+ul li a:active{
+    background-color: rgb(57, 190, 31);
+    transform: translateY(0) ;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+@keyframes clickAnimation {
+    0%{transform: scale(1);}
+    50%{transform:scale(0.9);}
+    100%{transform: scale(1);}
+    
+}
+.animate-click{
+    animation: clickAnimation 0.4s ease-in-out;
+}
+/* CONTACT OL LIST*/
+.contact_ol{
+    display: block;
+    font-size: 25px;
+    padding-top: 50px;
+}
+.list_contact{
+    padding-bottom: 1rem;
+}
+p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex: 1;
+}
+
+.thought1{
+    padding-top: 50px;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color: rgb(236, 211, 180);
+    
+}
+.footer-hidden{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-out;
+}
+.footer-visible{
+    height:auto ;
+    
+    transition: height 0.5s ease-in;
+}
+.footer{
+    background-color: rgb(14, 81, 14);
+    color: gold;
+    text-align: center;
+   margin-top: 260px;
+    margin-top: 260px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.guideintro{  /* this is the section for guide page*/
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    
+}
+.guideselect{
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+/* Background images  for home pages*/
+.background-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.background-image-guide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+} 
+/* background images for home page*/
+#bg1 {background-image: url('Green field1.jpg');}
+#bg2 {background-image: url('Green field2.jpg');}
+#bg3 {background-image: url('Green field3.jpg');}
+#bg4 {background-image: url('Green field4.jpeg');}
+#bg5 {background-image: url('Green fields5.jpg');}
+/* background images for guide*/
+#bg11 {background-image: url('pulses1.jpg');}
+#bg22 {background-image: url('rice1.jpg');}
+#bg33 {background-image: url('Wheat1.jpg');}
+#bg44 {background-image: url('Sugarcane1..jpg');}
+/* guide images*/
+.guideimagecontainer{
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+.clickable-image{
+    width: 100%; 
+    max-width: 400px; 
+    height: 400px; 
+    cursor: pointer;
+    transition: transform 0.3s;
+    object-fit: cover;
+     padding-left: 10px;
+     padding-right: 10px;
+     margin: auto;
+}
+.clickable-image:hover{
+    transform: scale(1.1);
+}
+.imageitemguide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align:center;
+    flex: 1 ;
+    margin: 10px;
+}
+.imagecaptionguide{
+    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+/*table contact body*/
+/* Apply gradient background animation to the entire body */
+body {
+     /* Initial gradient */
+    background-size: 200% 200%; /* Larger size for animation */
+    animation: gradientAnimation 10s ease infinite; /* Smooth animation */
+    min-height: 100vh; /* Ensure full page height */
+}
+
+/* Define the keyframes for the gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*queries*/
+#queries-section {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#queries-section h2 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+#query-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+#query-form input,
+#query-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#query-form input:focus,
+#query-form textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+#query-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#query-form button:hover {
+    background-color: #45a049;
+}
+@media (max-width: 600px) {
+    #queries-section {
+        padding: 20px;
+        margin: 10px;
+        max-width: 100%; /* Ensure it adjusts on smaller screens */
+    }
+
+    #query-form {
+        width: 100%; /* Ensure form width adjusts on smaller screens */
+    }
+}

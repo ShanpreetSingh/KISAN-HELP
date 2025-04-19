@@ -183,16 +183,16 @@ p{
     transition: opacity 1s ease-in-out;
 } 
 /* background images for home page*/
-#bg1 {background-image: url('Green field1.jpg');}
-#bg2 {background-image: url('Green field2.jpg');}
-#bg3 {background-image: url('Green field3.jpg');}
-#bg4 {background-image: url('Green field4.jpeg');}
-#bg5 {background-image: url('Green fields5.jpg');}
+#bg1 {background-image: url('Images/Green field1.jpg');}
+#bg2 {background-image: url('Images/Green field2.jpg');}
+#bg3 {background-image: url('Images/Green field3.jpg');}
+#bg4 {background-image: url('Images/Green field4.jpeg');}
+#bg5 {background-image: url('Images/Green fields5.jpg');}
 /* background images for guide*/
-#bg11 {background-image: url('pulses1.jpg');}
-#bg22 {background-image: url('rice1.jpg');}
-#bg33 {background-image: url('Wheat1.jpg');}
-#bg44 {background-image: url('Sugarcane1..jpg');}
+#bg11 {background-image: url('Images/pulses1.jpg');}
+#bg22 {background-image: url('Images/rice1.jpg');}
+#bg33 {background-image: url('Images/Wheat1.jpg');}
+#bg44 {background-image: url('Images/Sugarcane1..jpg');}
 /* guide images*/
 .guideimagecontainer{
     display: flex;
@@ -233,7 +233,6 @@ p{
     font-weight: bold;
 }
 /*table contact body*/
-/* Apply gradient background animation to the entire body */
 body {
      /* Initial gradient */
     background-size: 200% 200%; /* Larger size for animation */
@@ -306,10 +305,10 @@ body {
     #queries-section {
         padding: 20px;
         margin: 10px;
-        max-width: 100%; /* Ensure it adjusts on smaller screens */
+        max-width: 100%; 
     }
 
     #query-form {
-        width: 100%; /* Ensure form width adjusts on smaller screens */
+        width: 100%; 
     }
 }
